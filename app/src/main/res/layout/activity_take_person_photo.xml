@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#58000000"
+    android:keepScreenOn="true"
+    tools:context=".Activity.Enroll.TakePersonPhotoActivity">
+
+
+    <com.arvihealthscanner.btScan.common.CameraSourcePreview
+        android:id="@+id/faceCapturePreview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.arvihealthscanner.btScan.common.GraphicOverlay
+            android:id="@+id/facePreviewOverlay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:elevation="10dp"
+
+            />
+
+
+    </com.arvihealthscanner.btScan.common.CameraSourcePreview>
+
+    <ToggleButton
+        android:id="@+id/facingSwitch"
+        android:visibility="gone"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/toggle_style"
+        android:checked="false"
+        android:textOff=""
+        android:textOn="" />
+
+    <TextView
+        android:id="@+id/tvInstruction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/_20sdp"
+        android:background="#18375F"
+        android:fontFamily="@font/avenir_next_bold"
+        android:gravity="center"
+        android:padding="@dimen/_10sdp"
+        android:text="Capture the face in the border"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_14ssp" />
+
+
+    <ImageView
+        android:id="@+id/img5"
+        android:layout_width="@dimen/_60sdp"
+        android:layout_height="@dimen/_60sdp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="@dimen/_5sdp"
+        android:visibility="gone"
+        android:elevation="1dp"
+        />
+
+    <ImageView
+        android:id="@+id/img4"
+        android:layout_width="@dimen/_60sdp"
+        android:layout_height="@dimen/_60sdp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="@dimen/_5sdp"
+        android:elevation="1dp"
+        />
+    <ImageView
+        android:id="@+id/img3"
+        android:layout_width="@dimen/_60sdp"
+        android:layout_height="@dimen/_60sdp"
+        android:layout_toLeftOf="@+id/img4"
+        android:elevation="1dp"
+        android:layout_marginRight="@dimen/_5sdp"
+        />
+    <ImageView
+        android:id="@+id/img2"
+        android:layout_width="@dimen/_60sdp"
+        android:layout_height="@dimen/_60sdp"
+        android:layout_toLeftOf="@+id/img3"
+        android:elevation="1dp"
+        android:layout_marginRight="@dimen/_5sdp"
+        />
+
+    <ImageView
+        android:id="@+id/img1"
+        android:layout_width="@dimen/_60sdp"
+        android:layout_height="@dimen/_60sdp"
+        android:layout_toLeftOf="@+id/img2"
+        android:layout_marginRight="@dimen/_5sdp"
+        android:elevation="1dp"
+        />
+
+
+</RelativeLayout>

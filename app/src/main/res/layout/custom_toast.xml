@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/custom_toast_layout"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@drawable/bg_temp"
+	android:gravity="center"
+	android:orientation="vertical">
+
+
+
+	<ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			android:layout_gravity="center_vertical">
+			<TextView
+				android:id="@+id/tvUserName"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="@dimen/_25sdp"
+				android:text="Hi, "
+				android:layout_marginBottom="@dimen/_15sdp"
+				android:gravity="center"
+				android:textSize="@dimen/_18ssp"
+				android:textColor="@color/white"
+				android:fontFamily="@font/avenir_next_regular"
+				/>
+
+			<TextView
+				android:id="@+id/custom_toast_temp"
+				android:layout_width="@dimen/_90sdp"
+				android:layout_height="@dimen/_90sdp"
+				android:background="@drawable/green_status"
+				android:text="98.4 F"
+				android:layout_gravity="center_horizontal"
+				android:gravity="center"
+				android:textSize="@dimen/_20ssp"
+				android:textColor="@color/white"
+				android:fontFamily="@font/avenir_next_bold"
+				/>
+			<TextView
+				android:id="@+id/custom_toast_message"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="@dimen/_25sdp"
+				android:text="Entry Accepted"
+				android:gravity="center"
+				android:textSize="@dimen/_18ssp"
+				android:textColor="@color/white"
+				android:fontFamily="@font/avenir_next_regular"
+				/>
+
+			<TextView
+				android:id="@+id/custom_toast_message2"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="Sanitize your hands Below!"
+				android:gravity="center"
+				android:textSize="@dimen/_26ssp"
+				android:textColor="@color/white"
+				android:layout_marginTop="@dimen/_25sdp"
+				android:visibility="gone"
+				android:fontFamily="@font/avenir_next_regular"
+				/>
+			<RelativeLayout
+				android:id="@+id/rlSanitizer"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="@dimen/_25sdp"
+				android:layout_marginRight="@dimen/_25sdp"
+				android:layout_marginTop="@dimen/_25sdp">
+
+				<ImageView
+					android:layout_width="@dimen/_35sdp"
+					android:layout_height="@dimen/_35sdp"
+					android:src="@drawable/sanitizer"
+					android:layout_centerVertical="true"
+					/>
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="Please sanitize your hands below"
+					android:textSize="@dimen/_20ssp"
+					android:layout_marginLeft="@dimen/_45sdp"
+					android:textColor="@color/white"
+					android:fontFamily="@font/avenir_next_regular"
+					/>
+			</RelativeLayout>
+
+
+		</LinearLayout>
+	</ScrollView>
+
+
+</LinearLayout>

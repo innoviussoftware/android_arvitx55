@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlMainORA"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_temp"
+    android:gravity="center"
+    android:orientation="vertical">
+    
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical">
+            <TextView
+                android:id="@+id/tvTitleORA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_25sdp"
+                android:text="Blood Oxygen"
+                android:textAllCaps="true"
+                android:layout_marginBottom="@dimen/_15sdp"
+                android:gravity="center"
+                android:textSize="@dimen/_18ssp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/avenir_next_regular"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/tvBloodRateORA"
+                android:layout_width="@dimen/_90sdp"
+                android:layout_height="@dimen/_90sdp"
+                android:background="@drawable/green_status"
+                android:text="98"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:textSize="@dimen/_20ssp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/avenir_next_bold"
+                />
+            <TextView
+                android:id="@+id/tvStatusORA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_25sdp"
+                android:text="Normal"
+                android:gravity="center"
+                android:textAllCaps="true"
+                android:textSize="@dimen/_22ssp"
+                android:textColor="@color/green_status"
+                android:fontFamily="@font/avenir_next_regular"
+                />
+
+            <RelativeLayout
+                android:id="@+id/rlSanitizerOMA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_25sdp"
+                android:layout_marginRight="@dimen/_25sdp"
+                android:layout_marginTop="@dimen/_25sdp">
+
+                <ImageView
+                    android:layout_width="@dimen/_35sdp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:src="@drawable/sanitizer"
+                    android:layout_centerVertical="true"
+                    />
+                <TextView
+                    android:id="@+id/tvSubMessageORA"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Please sanitize your hands below"
+                    android:textSize="@dimen/_20ssp"
+                    android:layout_marginLeft="@dimen/_45sdp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/avenir_next_regular"
+                    />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/faceTopLayout"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#58000000"
+    android:keepScreenOn="true">
+
+
+    <com.arvihealthscanner.btScan.common.CameraSourcePreview
+        android:id="@+id/faceCapturePreview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <com.arvihealthscanner.btScan.common.GraphicOverlay
+            android:id="@+id/facePreviewOverlay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:elevation="10dp"
+            />
+
+
+
+
+    </com.arvihealthscanner.btScan.common.CameraSourcePreview>
+
+    <ToggleButton
+        android:id="@+id/facingSwitch"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/toggle_style"
+        android:checked="false"
+        android:textOff=""
+        android:visibility="gone"
+        android:textOn="" />
+
+    <TextView
+        android:id="@+id/tvInstruction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/_20sdp"
+        android:padding="@dimen/_10sdp"
+        android:background="#18375F"
+        android:text="Please put your face inside border"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:elevation="11dp"
+        android:fontFamily="@font/avenir_next_bold"
+        android:textSize="@dimen/_14ssp" />
+
+</RelativeLayout>
+

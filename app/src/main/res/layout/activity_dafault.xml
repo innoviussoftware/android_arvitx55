@@ -1,0 +1,148 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/faceTopLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:addStatesFromChildren="true"
+    android:background="@drawable/defaultbg"
+    android:keepScreenOn="true"
+    android:orientation="vertical"
+    android:visibility="visible" >
+
+    <com.arvihealthscanner.btScan.common.CameraSourcePreview
+        android:id="@+id/defaultPreview"
+        android:layout_width="137dp"
+        android:layout_height="36dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="462dp"
+        android:layout_marginEnd="206dp"
+        android:visibility="invisible">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/thermometer" />
+    </com.arvihealthscanner.btScan.common.CameraSourcePreview>
+
+    <FrameLayout
+        android:id="@+id/control"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@id/defaultPreview"
+        android:background="#000"
+        android:visibility="invisible">
+
+
+        <com.arvihealthscanner.btScan.common.GraphicOverlay
+            android:id="@+id/defaultPreviewOverlay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true" />
+
+        <ToggleButton
+            android:id="@+id/facingSwitch"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/toggle_style"
+            android:checked="false"
+            android:textOff=""
+            android:textOn="" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="161dp"
+        android:layout_height="59dp"
+        android:layout_above="@+id/control"
+        android:layout_below="@+id/defaultPreview"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="151dp"
+        android:layout_marginTop="104dp"
+        android:layout_marginEnd="98dp"
+        android:layout_marginBottom="113dp"
+        android:text="Scan temperature Here !"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="354dp"
+        android:layout_height="334dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:visibility="gone"
+        android:layout_marginStart="6dp"
+        android:layout_marginEnd="0dp"
+        app:srcCompat="@drawable/loading_gif" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/rlScanTitle"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/imgIcon"
+                    android:layout_width="@dimen/_45sdp"
+                    android:layout_height="@dimen/_45sdp"
+                    android:src="@drawable/scan_selfi"
+                    android:layout_marginLeft="@dimen/_25sdp"
+                    />
+                <TextView
+                    android:id="@+id/tvTitleSGA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/imgIcon"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/avenir_next_regular"
+                    android:text="Ready to scan"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_23ssp"
+                    />
+            </RelativeLayout>
+
+            <com.arvihealthscanner.Utils.GifImageView
+                android:id="@+id/gifSGA"
+                android:layout_width="@dimen/_150sdp"
+                android:layout_height="@dimen/_150sdp"
+                android:layout_below="@+id/rlScanTitle"
+                android:layout_marginTop="@dimen/_50sdp"
+                android:layout_centerHorizontal="true"
+
+                />
+
+            <ImageView
+                android:id="@+id/imgVwLogoLA"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_centerHorizontal="true"
+                android:scaleType="fitXY"
+                android:layout_below="@+id/gifSGA"
+                android:layout_marginTop="@dimen/_50sdp"
+                android:src="@drawable/ic_arvi_white_logo" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

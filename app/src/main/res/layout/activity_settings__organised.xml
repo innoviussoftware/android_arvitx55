@@ -1,0 +1,605 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/defaultbg"
+    android:visibility="visible"
+    tools:context="com.arvihealthscanner.btScan.java.arvi.Settings_Activity_organised"
+    tools:visibility="visible">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--mac address-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/textView21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginTop="@dimen/_30sdp"
+                    android:gravity="center_vertical"
+                    android:text="BT MAC ADDR"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_11ssp" />
+
+                <EditText
+                    android:id="@+id/macAddressTb"
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="@dimen/_30sdp"
+                    android:layout_marginEnd="@dimen/_20sdp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_11ssp"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </RelativeLayout>
+            <!--min face width default-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="@dimen/_200sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:gravity="center_vertical"
+                    android:text="Min Face Width % (Default Screen)"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_11ssp" />
+
+                <EditText
+                    android:id="@+id/editText2"
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:layout_marginEnd="@dimen/_20sdp"
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_11ssp" />
+            </RelativeLayout>
+            <!--min face width detect-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="@dimen/_200sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:gravity="center_vertical"
+                    android:text="Min Face Width % (Detect Screen)"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_11ssp" />
+
+                <EditText
+                    android:id="@+id/editText3"
+
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="@dimen/_30sdp"
+
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:layout_marginEnd="@dimen/_20sdp"
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_11ssp" />
+
+            </RelativeLayout>
+            <!--top margin-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_30sdp"
+
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:gravity="center_vertical"
+                    android:text="Top Margin %"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_11ssp" />
+
+                <EditText
+                    android:id="@+id/editText4"
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="@dimen/_30sdp"
+
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:layout_marginEnd="@dimen/_20sdp"
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_11ssp" />
+            </RelativeLayout>
+            <!--left margin-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/textView16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:gravity="center_vertical"
+                    android:text="Left Margin %"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_11ssp" />
+
+                <EditText
+                    android:id="@+id/editText5"
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:layout_marginEnd="@dimen/_20sdp"
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_11ssp" />
+
+            </RelativeLayout>
+            <!--box height-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_30sdp"
+
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:gravity="center_vertical"
+                    android:text="Box Height %"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_11ssp" />
+
+                <EditText
+                    android:id="@+id/editTextNumberDecimal"
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="@dimen/_30sdp"
+
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:layout_marginEnd="@dimen/_20sdp"
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_11ssp" />
+            </RelativeLayout>
+            <!--box width-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:gravity="center_vertical"
+                    android:text="Box Width %"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_11ssp" />
+
+                <EditText
+                    android:id="@+id/editText6"
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:layout_marginEnd="@dimen/_20sdp"
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_11ssp" />
+
+
+            </RelativeLayout>
+            <!--detect angleY-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/textView19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:gravity="center_vertical"
+                    android:text="DetectAngleY"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_11ssp" />
+
+                <EditText
+                    android:id="@+id/editText"
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:layout_marginEnd="@dimen/_20sdp"
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_11ssp" />
+
+
+            </RelativeLayout>
+            <!--detect angleZ-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:gravity="center_vertical"
+                    android:text="DetectAngleZ"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_11ssp" />
+
+                <EditText
+                    android:id="@+id/editText8"
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:layout_marginEnd="@dimen/_20sdp"
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_11ssp" />
+
+
+            </RelativeLayout>
+            <!--Alarm level-->
+            <RelativeLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:gravity="center_vertical"
+                    android:text="Alarm Level (Ferenhit)"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_11ssp" />
+
+                <EditText
+                    android:id="@+id/editText7"
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:layout_marginEnd="@dimen/_20sdp"
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_11ssp" />
+
+
+            </RelativeLayout>
+            <!--temp offset-->
+            <RelativeLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:gravity="center_vertical"
+                    android:text="Temp OffSet "
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_11ssp" />
+
+                <EditText
+                    android:id="@+id/editText9"
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:layout_marginEnd="@dimen/_20sdp"
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_11ssp" />
+
+            </RelativeLayout>
+            <!--scanning type-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvScreeningType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_30sdp"
+
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:gravity="center_vertical"
+                    android:text="Scanning Type"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_11ssp" />
+
+                <Spinner
+                    android:id="@+id/spScreeningType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:layout_marginEnd="@dimen/_20sdp"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_11ssp" />
+
+            </RelativeLayout>
+            <!--enroll new person-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+
+                    android:id="@+id/tvEnroll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_30sdp"
+
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:gravity="center_vertical"
+                    android:text="Enroll New Person"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_11ssp" />
+
+                <Button
+                    android:id="@+id/btnAddPerson"
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="@dimen/_30sdp"
+
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:layout_marginEnd="@dimen/_20sdp"
+                    android:background="@color/white"
+                    android:fontFamily="@font/avenir_next_bold"
+                    android:gravity="center"
+                    android:text="Add"
+                    android:textAllCaps="true"
+                    android:textColor="@color/blue"
+                    android:textSize="@dimen/_12ssp"
+
+                    />
+
+            </RelativeLayout>
+            <!--hand sanitization-->
+            <RelativeLayout
+                android:visibility="gone"
+                android:id="@+id/rlHandSanitizerOption"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvHandSanitizer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_30sdp"
+
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:gravity="center_vertical"
+                    android:text="Hand Sanitization"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_11ssp" />
+
+                <Spinner
+                    android:id="@+id/spHandSanitizerOption"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:layout_marginEnd="@dimen/_20sdp"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_11ssp" />
+
+            </RelativeLayout>
+            <!--face recognition-->
+            <RelativeLayout
+                android:visibility="gone"
+                android:id="@+id/rlFaceRecognizeSOA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvFaceRecognize"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:gravity="center_vertical"
+                    android:text="Face Recognition"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_11ssp" />
+
+                <Spinner
+                    android:id="@+id/spFaceRecognizeOption"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:layout_marginEnd="@dimen/_20sdp"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_11ssp" />
+
+            </RelativeLayout>
+            <!--oximeter scanning-->
+            <RelativeLayout
+                android:id="@+id/rlOxiSettingSOA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvOxiScreening"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_30sdp"
+
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:gravity="center_vertical"
+                    android:text="Oximeter Scanning"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_11ssp" />
+
+                <Spinner
+                    android:id="@+id/spOxiScanningOption"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:layout_marginEnd="@dimen/_20sdp"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_11ssp" />
+
+            </RelativeLayout>
+            <!--oximeter level-->
+            <RelativeLayout
+                android:id="@+id/rlOxiLevel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvOxiLevel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:gravity="center_vertical"
+                    android:text="Oximeter Level"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_11ssp" />
+
+                <EditText
+                    android:id="@+id/etOxiLevel"
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:layout_marginEnd="@dimen/_20sdp"
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_11ssp" />
+
+            </RelativeLayout>
+<!--Restart App at-->
+            <RelativeLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:gravity="center_vertical"
+                    android:text="Restart App at"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_11ssp" />
+
+                <TextView
+                    android:id="@+id/tvRestartTime"
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:ems="10"
+                    android:text="24:00"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_11ssp" />
+
+                <ImageView
+                    android:id="@+id/imgVwTime"
+                    android:elevation="1dp"
+                    android:layout_width="@dimen/_15sdp"
+                    android:layout_height="@dimen/_15sdp"
+                    android:src="@drawable/ic_clock_white"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+
+                    android:layout_marginRight="@dimen/_20sdp"
+                    />
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/doneBtn2"
+                android:layout_width="@dimen/_120sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/grey_rounded_bg"
+                android:text="Done" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

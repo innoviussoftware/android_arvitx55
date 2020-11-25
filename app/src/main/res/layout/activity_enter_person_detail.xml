@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Activity.Enroll.AddPersonDetailActivity">
+
+    <ImageView
+        android:id="@+id/imgVwBackPDA"
+        android:layout_width="@dimen/_25sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:layout_marginLeft="@dimen/_25sdp"
+        android:layout_marginRight="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:src="@drawable/ic_back_black" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_25sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_toRightOf="@+id/imgVwBackPDA"
+        android:layout_marginRight="@dimen/_15sdp"
+        android:textSize="@dimen/_14ssp"
+        android:fontFamily="@font/avenir_next_bold"
+        android:textColor="@color/black"
+        android:gravity="center_vertical"
+        android:text="Enrollment Person Detail"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/rlVerifyPDA"
+        android:layout_below="@+id/imgVwBackPDA">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/_25sdp"
+            android:layout_marginRight="@dimen/_25sdp">
+
+            <EditText
+                android:id="@+id/etNamePDA"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:hint="Name"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14ssp"
+                android:fontFamily="@font/avenir_next_regular"
+                android:singleLine="true"
+                android:maxLines="1"
+                />
+
+            <EditText
+                android:id="@+id/etAddressPDA"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_60sdp"
+                android:hint="Address"
+                android:gravity="top"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14ssp"
+                android:fontFamily="@font/avenir_next_regular"
+                />
+            <EditText
+                android:id="@+id/etEmpIdPDA"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:hint="Employee Id"
+                android:gravity="top"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14ssp"
+                android:fontFamily="@font/avenir_next_regular"
+                />
+
+            <EditText
+                android:id="@+id/etMobileNoPDA"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:hint="Mobile Number (+91)"
+                android:inputType="phone"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:maxLength="10"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14ssp"
+                android:fontFamily="@font/avenir_next_regular"
+                android:singleLine="true"
+                android:maxLines="1"
+                />
+        </LinearLayout>
+    </ScrollView>
+    <RelativeLayout
+        android:id="@+id/rlVerifyPDA"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45sdp"
+        android:layout_alignParentBottom="true"
+        >
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/light_grey"
+            android:layout_marginLeft="@dimen/_25sdp"
+            android:layout_marginRight="@dimen/_25sdp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Verify"
+            android:textColor="@color/pink"
+            android:textSize="@dimen/_14ssp"
+            android:gravity="center"
+            android:fontFamily="@font/avenir_next_regular"
+            android:textAllCaps="true"
+            />
+    </RelativeLayout>
+</RelativeLayout>
