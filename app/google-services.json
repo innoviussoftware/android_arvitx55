@@ -1,0 +1,93 @@
+{
+  "project_info": {
+    "project_number": "541431154316",
+    "firebase_url": "https://arvi-kiosk.firebaseio.com",
+    "project_id": "arvi-kiosk",
+    "storage_bucket": "arvi-kiosk.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:541431154316:android:fb212184f7b8be5ae29da9",
+        "android_client_info": {
+          "package_name": "com.arvicontactlessscanner"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "541431154316-gamcol6kmb492br829rih36ghde3uev3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.arvicontactlessscanner",
+            "certificate_hash": "c6ed88209123fbfcd06c93ce0504fb0b298eec4c"
+          }
+        },
+        {
+          "client_id": "541431154316-svscbphah3gh10gl7vgt8gd72nklta7b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBP_lBsUUzPQ2AiNYjWT5Y8LUSs_4mV4aw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "541431154316-svscbphah3gh10gl7vgt8gd72nklta7b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:541431154316:android:efb8b99d8945ce31e29da9",
+        "android_client_info": {
+          "package_name": "com.arvihealthscanner"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "541431154316-trt7o8af99n3c91c49qqu487u2hhc16v.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.arvihealthscanner",
+            "certificate_hash": "39a431f2567b8123860065f8527e6d197b0b644b"
+          }
+        },
+        {
+          "client_id": "541431154316-lasf8vdn5i9rr454b9d0mbua4c8ncvk6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.arvihealthscanner",
+            "certificate_hash": "c6ed88209123fbfcd06c93ce0504fb0b298eec4c"
+          }
+        },
+        {
+          "client_id": "541431154316-svscbphah3gh10gl7vgt8gd72nklta7b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBP_lBsUUzPQ2AiNYjWT5Y8LUSs_4mV4aw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "541431154316-svscbphah3gh10gl7vgt8gd72nklta7b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

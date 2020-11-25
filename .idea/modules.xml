@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Arvi_Health_Scanner.iml" filepath="$PROJECT_DIR$/.idea/modules/Arvi_Health_Scanner.iml" group="Arvi_Health_Scanner" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/app.iml" group="Arvi Health Scanner/app" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/chooserx/chooserx.iml" filepath="$PROJECT_DIR$/.idea/modules/chooserx/chooserx.iml" group="Arvi Health Scanner/chooserx" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/lint/lint.iml" filepath="$PROJECT_DIR$/.idea/modules/lint/lint.iml" group="Arvi Health Scanner/lint" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/lintchecks/lintchecks.iml" filepath="$PROJECT_DIR$/.idea/modules/lintchecks/lintchecks.iml" group="Arvi Health Scanner/lintchecks" />
+    </modules>
+  </component>
+</project>
