@@ -1056,7 +1056,7 @@ public class FaceCaptureActivity extends AppCompatActivity implements CompoundBu
             String strTemp = temperature.replace(" F", "");
             JsonObject jsonObject = new JsonObject();
             String empId = SessionManager.INSTANCE.getKioskID(context);
-            jsonObject.addProperty("empId", empId);
+            jsonObject.addProperty("employeeId", empId);
             jsonObject.addProperty("scanDate", strCurrentDate);
             jsonObject.addProperty("scanTime", strCurrentTime);
             jsonObject.addProperty("address",strAddress);
