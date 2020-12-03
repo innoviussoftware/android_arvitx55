@@ -232,6 +232,7 @@ class LoginActivity : AppCompatActivity(), View.OnClickListener {
                         MyProgressDialog.hideProgressDialog()
                         try {
                             if (response.code() == 200) {
+                                SessionManager.setIsUserLoggedin(context!!,true)
                                 SessionManager.setToken(context!!,response.body().accessToken)
                                 SessionManager.setKioskID(context!!,response.body().user.employeeId)
                                 var from = "1"

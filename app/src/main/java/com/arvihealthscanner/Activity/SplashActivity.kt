@@ -50,7 +50,7 @@ class SplashActivity : AppCompatActivity() {
 
         try {
 
-        context = SplashActivity@ this
+            context = SplashActivity@ this
 
             //todo:: priyanka 31/11/2020
             //todo:: restart app code start
@@ -138,35 +138,42 @@ class SplashActivity : AppCompatActivity() {
 
     private fun gotoNextPage() {
         try {
-            if (SessionManager.isSettingSeted(context)) {
-                Config.MAC_ADDRESS = SessionManager.getMacAddress(context)
-                Config.defaultMinFaceWidth = SessionManager.getDefaultFaceWidth(context)
-                Config.detectMinFaceWidth = SessionManager.getDetectFaceWidth(context)
-                Config.fixedBoxTopMargin = SessionManager.getTopMargin(context)
-                Config.fixedBoxLeftMargin = SessionManager.getLeftMargin(context)
-                Config.fixedBoxHeight = SessionManager.getBoxHeight(context)
-                Config.fixedBoxWidth = SessionManager.getBoxWidth(context)
-                Config.detectAngleY = SessionManager.getAngleY(context)
-                Config.detectAngleZ = SessionManager.getAngleZ(context)
-                //todo:: Priyanka 27-10
-              //  Config.tempAlarm = SessionManager.getAlarmLevel(context)
-              //  Config.tempOffset = SessionManager.getTempOffset(context)
-                Config.oximeterLevel = SessionManager.getOxiLevel(context)
-                Config.oxiScanOption = SessionManager.getOxiScanOption(context)
-                Config.santitizerOption = SessionManager.getSanitizerOption(context)
-                Config.faceRecognizeOption = SessionManager.getFaceRecognizeOption(context)
-                Config.restartAppTime = SessionManager.getRestartAppTime(context)
-                if (!SessionManager.getScreeningMode(context!!).equals("Facial Recognize")) {
-                    var from = "1" //intent.getStringExtra("from")
-                    var intent = Intent(context, ScanQRCodeActivity::class.java)
-                    intent.putExtra("from", from)
+            if (SessionManager.getIsUserLoggedin(context!!)) {
+                if (SessionManager.isSettingSeted(context)) {
+                    Config.MAC_ADDRESS = SessionManager.getMacAddress(context)
+                    Config.defaultMinFaceWidth = SessionManager.getDefaultFaceWidth(context)
+                    Config.detectMinFaceWidth = SessionManager.getDetectFaceWidth(context)
+                    Config.fixedBoxTopMargin = SessionManager.getTopMargin(context)
+                    Config.fixedBoxLeftMargin = SessionManager.getLeftMargin(context)
+                    Config.fixedBoxHeight = SessionManager.getBoxHeight(context)
+                    Config.fixedBoxWidth = SessionManager.getBoxWidth(context)
+                    Config.detectAngleY = SessionManager.getAngleY(context)
+                    Config.detectAngleZ = SessionManager.getAngleZ(context)
+                    //todo:: Priyanka 27-10
+                    //  Config.tempAlarm = SessionManager.getAlarmLevel(context)
+                    //  Config.tempOffset = SessionManager.getTempOffset(context)
+                    Config.oximeterLevel = SessionManager.getOxiLevel(context)
+                    Config.oxiScanOption = SessionManager.getOxiScanOption(context)
+                    Config.santitizerOption = SessionManager.getSanitizerOption(context)
+                    Config.faceRecognizeOption = SessionManager.getFaceRecognizeOption(context)
+                    Config.restartAppTime = SessionManager.getRestartAppTime(context)
+                    if (!SessionManager.getScreeningMode(context!!).equals("Facial Recognize")) {
+                        var from = "1" //intent.getStringExtra("from")
+                        var intent = Intent(context, ScanQRCodeActivity::class.java)
+                        intent.putExtra("from", from)
+                        startActivity(intent)
+                    } else {
+                        val i = Intent(applicationContext, DafaultActivity::class.java)
+                        ArviFaceDetectionProcessor.fixedBox = null
+                        startActivity(i)
+                    }
+                }else{
+                    var intent = Intent(context, LoginActivity::class.java)
+                    intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_NEW_TASK
                     startActivity(intent)
-                } else {
-                    val i = Intent(applicationContext, DafaultActivity::class.java)
-                    ArviFaceDetectionProcessor.fixedBox = null
-                    startActivity(i)
                 }
             } else {
+
                 var intent = Intent(context, LoginActivity::class.java)
                 intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_NEW_TASK
                 startActivity(intent)

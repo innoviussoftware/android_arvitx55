@@ -108,6 +108,8 @@ public class FaceCaptureActivity extends AppCompatActivity implements CompoundBu
     String fullname;
     String strUserId = "", strUserName = "";
     Context context;
+    double latitude;
+    double longitude;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -597,8 +599,9 @@ public class FaceCaptureActivity extends AppCompatActivity implements CompoundBu
                 @Override
                 public void onNewLocationAvailable(SingleShotLocationProvider.GPSCoordinates location) {
                     Log.e("location:",location.latitude+" , "+location.longitude);
-                    double latitude = location.latitude;
-                    double longitude = location.longitude;
+
+                    latitude = location.latitude;
+                    longitude = location.longitude;
                     Geocoder geocoder;
                     List<Address> addresses;
                     geocoder = new Geocoder(getApplicationContext(), Locale.getDefault());
@@ -1056,10 +1059,13 @@ public class FaceCaptureActivity extends AppCompatActivity implements CompoundBu
             String strTemp = temperature.replace(" F", "");
             JsonObject jsonObject = new JsonObject();
             String empId = SessionManager.INSTANCE.getKioskID(context);
-            jsonObject.addProperty("employeeId", empId);
+            jsonObject.addProperty("employeeId", strUserId);
             jsonObject.addProperty("scanDate", strCurrentDate);
             jsonObject.addProperty("scanTime", strCurrentTime);
             jsonObject.addProperty("address",strAddress);
+            jsonObject.addProperty("emp_lat",latitude);
+            jsonObject.addProperty("emp_long",longitude);
+
 
             Log.e("storeT:", jsonObject.toString());
 
